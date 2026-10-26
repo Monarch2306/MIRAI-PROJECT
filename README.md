@@ -1,32 +1,12 @@
 # MIRAI : Evaluating LLM Agents for Event Forecasting
 
-This repository contains the code and data for the paper "**[MIRAI: Evaluating LLM Agents for Event Forecasting](https://arxiv.org/abs/2407.01231)**".
-
-Authors (*Equal Contribution): [Chenchen Ye](https://yecchen.github.io/)\*, [Ziniu Hu](https://acbull.github.io/)\*, [Yihe Deng](https://sites.google.com/g.ucla.edu/yihedeng/)\*, [Zijie Huang](https://zijieh.github.io/), [Mingyu Derek Ma](https://derek.ma/), [Yanqiao Zhu](https://sxkdz.github.io/), [Wei Wang](https://web.cs.ucla.edu/~weiwang/).
+This repository contains the code and data for "**MIRAI: Evaluating LLM Agents for Event Forecasting**".
 
 [![Homepage](https://img.shields.io/badge/Homepage-Access-blue?style=flat)](https://mirai-llm.github.io/)
 [![Data](https://img.shields.io/badge/Data-Download-brightgreen?style=flat)](https://drive.google.com/file/d/1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN/view?usp=sharing)
 [![Demo Notebook](https://img.shields.io/badge/Demo-Notebook-yellow?style=flat)](https://colab.research.google.com/drive/1QyqT35n6NbtPaNtqQ6A7ILG_GMeRgdnO?usp=sharing)
 [![Demo Video](https://img.shields.io/badge/Demo-Video-red?style=flat)](https://colab.research.google.com/drive/1QyqT35n6NbtPaNtqQ6A7ILG_GMeRgdnO?usp=sharing)
 
-**Citation**: If you find this repo useful for your research, please consider citing the paper
-```
-@misc{ye2024miraievaluatingllmagents,
-      title={MIRAI: Evaluating LLM Agents for Event Forecasting}, 
-      author={Chenchen Ye and Ziniu Hu and Yihe Deng and Zijie Huang and Mingyu Derek Ma and Yanqiao Zhu and Wei Wang},
-      year={2024},
-      eprint={2407.01231},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2407.01231}, 
-}
-```
-
-
-https://github.com/yecchen/MIRAI/assets/109169855/f2c44af4-b2e1-4b5f-bc2a-e0ac6a74e58a
-
-## 🔔 News 
-- **[07/01/2024]** Our paper is released on arXiv: https://arxiv.org/abs/2407.01231.
 
 ## Table of Contents
 - [About MIRAI](#About-MIRAI)
@@ -45,7 +25,6 @@ https://github.com/yecchen/MIRAI/assets/109169855/f2c44af4-b2e1-4b5f-bc2a-e0ac6a
     - [Forecasting with Different Temporal Distances](#Forecasting-with-Different-Temporal-Distances)
     - [Evaluation](#Evaluation)
     - [Further Analysis](#Further-Analysis)
-- [Acknowledgement](#Acknowledgement)
 - [Statements](#Statements)
 
 
@@ -100,7 +79,7 @@ huggingface-cli login --token "${your_access_token}"
 Download the data from the following link: [MIRAI Data](https://drive.google.com/file/d/1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN/view?usp=sharing) and extract the contents to the `data` directory.
 
 ## Dataset Construction
-To construct the above data from scratch,  we also provide the detailed scripts for dataset construction. The dataset construction scripts is contained in the `dataset_construction` directory, including the following files and running commands:
+To construct the above data from scratch, we also provide the detailed scripts for dataset construction. The dataset construction scripts are contained in the `dataset_construction` directory, including the following files and running commands:
 ```python
 cd dataset_construction
 ```
@@ -278,16 +257,5 @@ python agent_evaluation/eval.py --dataset test --model gpt-4o-2024-05-13 --actio
 </p>
 
 
-
-
-
-## Acknowledgement
-We thank the following projects for providing the useful database and codebase for our research:
-- [GDELT](https://www.gdeltproject.org)
-- [OBELICS](https://github.com/huggingface/OBELICS)
-- [FastText](https://github.com/facebookresearch/fastText)
-- [SentencePiece](https://github.com/google/sentencepiece)
-
-
 ## Statements
-The code and data in this repository are for research purposes only. The data is derived from the GDELT project, and the authors have followed strict guidelines to ensure the data is used in compliance with the GDELT terms of service. Based on https://www.gdeltproject.org/about.html#termsofuse , GDELT dataset *“is an open platform for research and analysis of global society and thus all datasets released by the GDELT Project are available for unlimited and unrestricted use for any academic, commercial, or governmental use of any kind without fee.”, as long as “any use or redistribution of the data must include a citation to the GDELT Project and a link to this website ( https://www.gdeltproject.org/ ).”*, which the authors have cited in the paper and this GitHub repository. The authors have also followed the guidelines for data usage and citation as per the GDELT terms of service. The authors bear all responsibilities in case of violation of any terms of service.
+The code and data in this repository are for research purposes only. The data is derived from the GDELT project, and strict guidelines have been followed to ensure the data is used in compliance with the GDELT terms of service. Based on https://www.gdeltproject.org/about.html#termsofuse , GDELT dataset *“is an open platform for research and analysis of global society and thus all datasets released by the GDELT Project are available for unlimited and unrestricted use for any academic, commercial, or governmental use of any kind without fee.”, as long as “any use or redistribution of the data must include a citation to the GDELT Project and a link to this website ( https://www.gdeltproject.org/ ).”*
